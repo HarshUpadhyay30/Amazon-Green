@@ -56,7 +56,7 @@ export default function OrdersPage() {
       items: [
         {
           name: "Organic Cotton T-Shirt - Sustainable Fashion",
-          price: 24.99,
+          price: 699,
           quantity: 2,
           image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=100&h=100&fit=crop",
           packagingType: "reusable",
@@ -65,7 +65,7 @@ export default function OrdersPage() {
       status: "delivered",
       orderDate: "2024-01-15",
       deliveryDate: "2024-01-18",
-      total: 49.98,
+      total: 1398,
       trackingNumber: "1Z999AA1234567890",
       canCancel: false,
       canReturn: true,
@@ -75,7 +75,7 @@ export default function OrdersPage() {
       items: [
         {
           name: "Bamboo Fiber Phone Case - Biodegradable",
-          price: 19.99,
+          price: 300,
           quantity: 1,
           image: "https://images.unsplash.com/photo-1556656793-08538906a9f8?w=100&h=100&fit=crop",
           packagingType: "biodegradable",
@@ -84,7 +84,7 @@ export default function OrdersPage() {
       status: "delivered",
       orderDate: "2024-01-20",
       deliveryDate: "2024-01-23",
-      total: 19.99,
+      total: 300,
       trackingNumber: "1Z999AA1234567891",
       canCancel: false,
       canReturn: true,
@@ -94,7 +94,7 @@ export default function OrdersPage() {
       items: [
         {
           name: "Recycled Ocean Plastic Water Bottle",
-          price: 15.99,
+          price: 400,
           quantity: 3,
           image: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=100&h=100&fit=crop",
           packagingType: "recyclable",
@@ -102,7 +102,7 @@ export default function OrdersPage() {
       ],
       status: "processing",
       orderDate: "2024-01-22",
-      total: 47.97,
+      total: 1200,
       canCancel: true,
       canReturn: false,
     },

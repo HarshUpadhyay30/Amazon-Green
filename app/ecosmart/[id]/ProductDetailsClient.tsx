@@ -6,7 +6,33 @@ import { useEffect, useState } from "react";
 import ProductDetails from "../ProductDetails";
 import Image from "next/image";
 
-export default function ProductDetailsClient({ product, alternatives }) {
+interface Product {
+  id: number;
+  name: string;
+  price: number;
+  originalPrice?: number;
+  image: string;
+  description?: string;
+  features?: string[];
+  specifications?: { [key: string]: string };
+  badge?: string;
+  discount?: string;
+  category?: string;
+}
+
+interface AlternativeProduct {
+  id: number;
+  name: string;
+  price: number;
+  image: string;
+}
+
+interface ProductDetailsClientProps {
+  product: Product;
+  alternatives: AlternativeProduct[];
+}
+
+export default function ProductDetailsClient({ product, alternatives }: ProductDetailsClientProps) {
   const router = useRouter();
   const { logout } = useAuth();
   const { totalItems, clearCart } = useCart();
@@ -91,20 +117,14 @@ export default function ProductDetailsClient({ product, alternatives }) {
               className="flex items-center gap-1 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded-lg transition-colors shadow"
               style={{ fontSize: '1rem' }}
             >
-              <svg className="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3l2.09 6.26L21 9.27l-5 4.87L17.18 21 12 17.27 6.82 21 8 14.14l-5-4.87 6.91-1.01z" />
-              </svg>
+              <span className="text-xl mr-1" role="img" aria-label="crown">👑</span>
               Prime
             </button>
             <button
               className="relative flex items-center hover:text-orange-300 transition-colors"
               onClick={() => router.push("/cart")}
             >
-              <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <circle cx="9" cy="21" r="1.5" fill="currentColor" />
-                <circle cx="17" cy="21" r="1.5" fill="currentColor" />
-                <path d="M3 3h2l.4 2M7 6h13l-1.5 9H7.5L7 6z" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" fill="none" />
-              </svg>
+              <span className="text-2xl mr-1" role="img" aria-label="cart">🛍️</span>
               <span className="absolute -top-1 -right-1 text-xs bg-[#febd69] text-black px-1.5 py-0.5 rounded-full font-bold">
                 {totalItems}
               </span>
@@ -161,7 +181,7 @@ export default function ProductDetailsClient({ product, alternatives }) {
               <div className="mt-4">
                 <h3 className="text-lg font-bold mb-4 text-green-800">Sustainable Alternatives from Amazon Green</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                  {alternatives.map((alt) => (
+                  {alternatives.map((alt: AlternativeProduct) => (
                     <div key={alt.id} className="bg-white rounded-lg shadow p-4 flex flex-col items-center">
                       <img src={alt.image} alt={alt.name} width={100} height={100} className="object-contain mb-2 rounded" />
                       <h4 className="font-semibold text-gray-900 text-center mb-1 text-sm line-clamp-2">{alt.name}</h4>

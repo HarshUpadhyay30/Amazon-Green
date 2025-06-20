@@ -227,10 +227,10 @@ export default function MarketplaceItemPage() {
                       <span>Verified seller</span>
                     </div>
                   </div>
-                  <Button variant="outline" size="sm">
+                  {/* <Button variant="outline" size="sm">
                     <MessageCircle className="w-4 h-4 mr-2" />
                     Message Seller
-                  </Button>
+                  </Button> */}
                 </div>
               </CardContent>
             </Card>

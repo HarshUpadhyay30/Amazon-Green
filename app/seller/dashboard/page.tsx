@@ -140,7 +140,7 @@ export default function SellerDashboard() {
     {
       id: "1",
       name: "Eco-Friendly Bamboo Toothbrush Set",
-      price: 12.99,
+      price: 199,
       status: "active",
       views: 1247,
       orders: 89,
@@ -155,7 +155,7 @@ export default function SellerDashboard() {
     {
       id: "2",
       name: "Solar-Powered Phone Charger",
-      price: 45.99,
+      price: 749,
       status: "active",
       views: 892,
       orders: 34,
@@ -173,7 +173,7 @@ export default function SellerDashboard() {
     {
       id: "ref-1",
       name: "Refurbished MacBook Air 13-inch",
-      price: 899.99,
+      price: 79999,
       status: "active",
       views: 2341,
       orders: 12,

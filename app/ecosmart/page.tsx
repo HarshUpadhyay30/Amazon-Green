@@ -241,20 +241,14 @@ export default function AmazonClone() {
               className="flex items-center gap-1 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded-lg transition-colors shadow"
               style={{ fontSize: '1rem' }}
             >
-              <svg className="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3l2.09 6.26L21 9.27l-5 4.87L17.18 21 12 17.27 6.82 21 8 14.14l-5-4.87 6.91-1.01z" />
-              </svg>
+              <span className="text-xl mr-1" role="img" aria-label="crown">👑</span>
               Prime
             </button>
             <button
               className="relative flex items-center hover:text-orange-300 transition-colors"
               onClick={() => router.push("/cart")}
             >
-              <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <circle cx="9" cy="21" r="1.5" fill="currentColor" />
-                <circle cx="17" cy="21" r="1.5" fill="currentColor" />
-                <path d="M3 3h2l.4 2M7 6h13l-1.5 9H7.5L7 6z" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" fill="none" />
-              </svg>
+              <span className="text-2xl mr-1" role="img" aria-label="cart">🛍️</span>
               <span className="absolute -top-1 -right-1 text-xs bg-[#febd69] text-black px-1.5 py-0.5 rounded-full font-bold">
                 {totalItems}
               </span>

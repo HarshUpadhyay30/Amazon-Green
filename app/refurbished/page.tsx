@@ -46,7 +46,7 @@ export default function RefurbishedPage() {
     {
       id: "refurb-1",
       name: "iPhone 13 Pro - Refurbished",
-      originalPrice: 999.99 * 83,
+      originalPrice: 79999,
       price: 649.99 * 83,
       savings: 350.0 * 83,
       condition: "Excellent",
@@ -66,7 +66,7 @@ export default function RefurbishedPage() {
     {
       id: "refurb-2",
       name: "MacBook Air M1 - Refurbished",
-      originalPrice: 1299.99 * 83,
+      originalPrice: 79999,
       price: 899.99 * 83,
       savings: 400.0 * 83,
       condition: "Very Good",
@@ -86,7 +86,7 @@ export default function RefurbishedPage() {
     {
       id: "refurb-3",
       name: "Samsung Galaxy Watch 4 - Refurbished",
-      originalPrice: 329.99 * 83,
+      originalPrice: 79999,
       price: 199.99 * 83,
       savings: 130.0 * 83,
       condition: "Good",
@@ -106,7 +106,7 @@ export default function RefurbishedPage() {
     {
       id: "refurb-4",
       name: "Dell XPS 13 - Refurbished",
-      originalPrice: 1199.99 * 83,
+      originalPrice: 79999,
       price: 749.99 * 83,
       savings: 450.0 * 83,
       condition: "Very Good",
@@ -126,7 +126,7 @@ export default function RefurbishedPage() {
     {
       id: "refurb-5",
       name: "iPad Pro 11-inch - Refurbished",
-      originalPrice: 899.99 * 83,
+      originalPrice: 79999,
       price: 599.99 * 83,
       savings: 300.0 * 83,
       condition: "Excellent",
@@ -146,7 +146,7 @@ export default function RefurbishedPage() {
     {
       id: "refurb-6",
       name: "Sony WH-1000XM4 - Refurbished",
-      originalPrice: 349.99 * 83,
+      originalPrice: 79999,
       price: 229.99 * 83,
       savings: 120.0 * 83,
       condition: "Very Good",
@@ -166,7 +166,7 @@ export default function RefurbishedPage() {
     {
       id: "refurb-7",
       name: "Google Pixel 7 - Refurbished",
-      originalPrice: 699.99 * 83,
+      originalPrice: 79999,
       price: 449.99 * 83,
       savings: 250.0 * 83,
       condition: "Good",
@@ -186,7 +186,7 @@ export default function RefurbishedPage() {
     {
       id: "refurb-8",
       name: "Microsoft Surface Pro 8 - Refurbished",
-      originalPrice: 1099.99 * 83,
+      originalPrice: 79999,
       price: 699.99 * 83,
       savings: 400.0 * 83,
       condition: "Excellent",

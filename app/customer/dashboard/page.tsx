@@ -68,7 +68,7 @@ export default function CustomerDashboard() {
       id: "p2p-1",
       title: "Vintage Denim Jacket - Size M",
       category: "clothing",
-      price: 35.0,
+      price: 299.0,
       condition: "good",
       description:
         "Classic vintage denim jacket in great condition. Slight fading which adds to the vintage look. Perfect for casual wear.",
@@ -77,7 +77,7 @@ export default function CustomerDashboard() {
         "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=300&h=300&fit=crop",
       ],
       hasReceipt: false,
-      location: "Seattle, WA",
+      location: "Patna, Bihar",
       views: 47,
       likes: 8,
       status: "active",
